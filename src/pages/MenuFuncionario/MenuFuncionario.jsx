@@ -1,16 +1,19 @@
 
+
+ 
+import styles from './MenuFuncionario.module.css'
+ 
 const MenuFuncionario = () => {
-
-
+ 
+ 
     return (
-
+ 
         <div>
-        
-         <nav className="navbar navbar-expand-lg navbar-light bg-light p-2 rounded shadow-sm w-100">
-        <a className="navbar-brand" href="/pizzaria/funcionario/home">
+             <nav className={`navbar navbar-expand-lg navbar-light bg-light p-2 rounded shadow-sm w-100 ${styles.menu}`}>
+        <a className={`navbar-brand ${styles.logo}`} href="/pizzaria/funcionario/home">
           Home
         </a>
-
+ 
         {/* Botão Hamburguer para telas menores */}
         <button
           className="navbar-toggler"
@@ -23,25 +26,25 @@ const MenuFuncionario = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
+ 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="/pizzaria/funcionario/produto">
+              <a className={`nav-link ${styles.itemMenu}`} href="/pizzaria/funcionario/produtos">
                 Produtos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/pizzaria/funcionario/categoria">
+              <a className={`nav-link ${styles.itemMenu}`}href="/pizzaria/funcionario/categorias">
                 Categorias
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/pizzaria/funcionario/estoque">
+              <a className={`nav-link ${styles.itemMenu}`} href="/pizzaria/funcionario/estoque">
                 Estoque
               </a>
             </li>
-
+ 
             {/* Dropdown Menu */}
             <li className="nav-item dropdown">
               <a
@@ -74,21 +77,21 @@ const MenuFuncionario = () => {
                 </li>
               </ul>
             </li>
-
+ 
             <li className="nav-item">
               <a className="nav-link disabled">Desativado</a>
             </li>
           </ul>
-
+ 
           {/* Botão de Logout alinhado à direita */}
           <button type="button" className="btn btn-primary">
             Logout
           </button>
         </div>
       </nav>
-
+ 
         </div>
     )
 }
-
-export default MenuFuncionario 
+ 
+export default MenuFuncionario
