@@ -1,12 +1,9 @@
 
 const MenuFuncionario = () => {
 
-
     return (
-
         <div>
-        
-         <nav className="navbar navbar-expand-lg navbar-light bg-light p-2 rounded shadow-sm w-100">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light p-2 rounded shadow-sm w-100">
         <a className="navbar-brand" href="/pizzaria/funcionario/home">
           Home
         </a>
@@ -27,12 +24,12 @@ const MenuFuncionario = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="/pizzaria/funcionario/produto">
+              <a className="nav-link" href="/pizzaria/funcionario/produtos">
                 Produtos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/pizzaria/funcionario/categoria">
+              <a className="nav-link" href="/pizzaria/funcionario/categorias">
                 Categorias
               </a>
             </li>
