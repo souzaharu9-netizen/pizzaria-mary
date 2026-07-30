@@ -8,6 +8,7 @@
     );
 }
 
+<<<<<<< HEAD
 .logo{
 
     color: white !important;
@@ -16,12 +17,29 @@
 }
 
 .itemMenu{
+=======
+.logo {
+
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.itemMenu {
+>>>>>>> 6b766f68d13d5bfa284a0422a3f8b8142f14f038
 
     color: rgba(255, 255, 255, .8) !important;
     transition: .3s;
 }
 
+<<<<<<< HEAD
 .itemMenu:hover{
     color: orange !important;
     transform: translateY(-1px);
+=======
+.itemMenu:hover {
+    color: orange !important;
+    transform: translateY(-1px);
+
+>>>>>>> 6b766f68d13d5bfa284a0422a3f8b8142f14f038
 }
