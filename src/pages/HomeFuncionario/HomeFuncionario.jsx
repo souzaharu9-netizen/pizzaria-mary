@@ -4,8 +4,11 @@ const HomeFuncionario = () => {
 
     return (
 
-        <div className='container'>
+        <div className="container">
               <MenuFuncionario/>
+
+              <p>Home Funcionario</p>
+
         </div>
     )
 }

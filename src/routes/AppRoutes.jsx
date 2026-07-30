@@ -3,8 +3,8 @@ import{
     BrowserRouter,
     Routes,
     Route
-}
-from "react-router-dom"
+} from "react-router-dom"
+
 import HomeFuncionario from "../pages/HomeFuncionario/HomeFuncionario"
 import ListarProduto from "../pages/ListarProduto/ListarProduto"
 
