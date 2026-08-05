@@ -1,46 +1,22 @@
 
-<<<<<<< HEAD
 import styles from "./MenuFuncionario.module.css"
-
+ 
 import { Link } from "react-router-dom"
-
-
+ 
+ 
 const MenuFuncionario = () => {
-
+ 
     return (
         <div>
       <nav className={`navbar navbar-expand-lg navbar-light bg-light p-2 rounded shadow-sm w-100 ${styles.menu}`}>
+       
+            <Link 
+             to="/home"
+            className={`navbar-brand ${styles.logo}`}
+            >
+              Home
+            </Link>
 
-        <Link
-        to="/home"
-        className={`navbar-brand ${styles.logo}`}
-        >
-          Home
-        </Link>
-
-=======
-
- 
-import styles from './MenuFuncionario.module.css'
-
-import { Link } from 'react-router-dom'
- 
-const MenuFuncionario = () => {
- 
- 
-    return (
- 
-        <div>
-             <nav className={`navbar navbar-expand-lg navbar-light bg-light p-2 rounded shadow-sm w-100 ${styles.menu}`}>
-  
-        <Link
-          to= "/home"
-          className={`navbar-brand ${styles.logo}`}
-        >
-          Home
-        </Link>
- 
->>>>>>> 6b766f68d13d5bfa284a0422a3f8b8142f14f038
         {/* Botão Hamburguer para telas menores */}
         <button
           className="navbar-toggler"
@@ -57,55 +33,31 @@ const MenuFuncionario = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto">
             <li className="nav-item active">
-<<<<<<< HEAD
+             <Link
+             to="/produtos"
+             className={`nav-link ${styles.itemMenu}`}
+             >
+              Produtos
+             </Link>
+ 
+             
+            </li>
+            <li className="nav-item">
+                <Link
+                to="/categorias"
+                className={`nav-link ${styles.itemMenu}`}
+                >
+                  Categorias
+                </Link>
+            </li>
+ 
+            <li className="nav-item">
               <Link
-              to="/produtos"
-              className={`nav-link ${styles.itemMenu}`}>
-                Produtos
+              to="/estoque"
+              className={`nav-link ${styles.itemMenu}`}
+              >
+                Estoque
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-              to="/categorias"
-              className={`nav-link ${styles.itemMenu}`}>
-                Categorias
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-              to="/estques"
-              className={`nav-link ${styles.itemMenu}`}>
-                Estoques
-              </Link>
-            </li>
-=======
-              
-        <Link
-          to= "/produtos"
-          className={`navbar-brand ${styles.itemMenu}`}
-        >
-          Produtos
-        </Link>
->>>>>>> 6b766f68d13d5bfa284a0422a3f8b8142f14f038
-
-            </li>
-            <li className="nav-item">
-
-         <Link
-          to= "/Categorias"
-          className={`navbar-brand ${styles.itemMenu}`}
-        >
-          Categorias
-        </Link>
-        
-            </li>
-            <li className="nav-item">
-              <Link
-          to= "/Estoque"
-          className={`navbar-brand ${styles.itemMenu}`}
-        >
-          Estoque
-        </Link>
             </li>
  
             {/* Dropdown Menu */}

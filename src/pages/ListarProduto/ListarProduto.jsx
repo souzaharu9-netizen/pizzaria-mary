@@ -64,7 +64,6 @@ const ListarProduto = () => {
 
             <MenuFuncionario/>
             <p>Lista de Produtos</p>
-<<<<<<< HEAD
             <div className="table-responsive">
                 <table className="table table-bordered table-striped table-hover">
                     <thead className="table-dark">
@@ -101,9 +100,6 @@ const ListarProduto = () => {
         </tbody>
     </table>
  </div>
-
-=======
->>>>>>> 6b766f68d13d5bfa284a0422a3f8b8142f14f038
 
         </div>
     )
