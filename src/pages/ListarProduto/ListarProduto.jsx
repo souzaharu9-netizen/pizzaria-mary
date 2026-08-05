@@ -63,6 +63,7 @@ const ListarProduto = () => {
         <div className='container'>
 
             <MenuFuncionario/>
+
             <p>Lista de Produtos</p>
             <div className="table-responsive">
                 <table className="table table-bordered table-striped table-hover">
@@ -76,11 +77,17 @@ const ListarProduto = () => {
                     </thead>
                 <tbody>
                     <tr>
-                        <td style={{ fontSize: "13px" }}></td>
-                        <td style={{ fontSize: "13px" }}>
+                        <td style={{ fontSize: "13px" }}>{Produtos.nome}</td>
+                        <td style={{ fontSize: "13px" }}> 
+                            {
+                                new Intl.NumberFormat("pt-BR", {
+                                    style: "currency",
+                                    currency: "BRL"
+                                }).formatRange(produto.precoVenda)
+                            }
  
                         </td>
-                        <td style={{ fontSize: "13px" }}></td>
+                        <td style={{ fontSize: "13px" }}>{produto.descricao}</td>
                         <td className="text-center fs-6" style={{ width: "100px" }}>
                             {/* Botão de Editar */}
                         <button
