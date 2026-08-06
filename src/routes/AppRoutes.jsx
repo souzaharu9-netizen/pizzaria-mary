@@ -7,6 +7,7 @@ import{
 
 import HomeFuncionario from "../pages/HomeFuncionario/HomeFuncionario"
 import ListarProduto from "../pages/ListarProduto/ListarProduto"
+import ListarCategoria from "../pages/ListarCategoria/ListarCategoria"
 
 
 const AppRoutes = () =>{
@@ -28,6 +29,11 @@ const AppRoutes = () =>{
                             <Route
                              path="/produtos"
                              element={<ListarProduto/>}
+                            />
+
+                            <Route
+                             path="/categorias"
+                             element={<ListarCategoria/>}
                             />
 
                      </Routes>
