@@ -8,6 +8,7 @@ import{
 import HomeFuncionario from "../pages/HomeFuncionario/HomeFuncionario"
 import ListarProduto from "../pages/ListarProduto/ListarProduto"
 import ListarCategoria from "../pages/ListarCategoria/ListarCategoria"
+import NovoProduto from "../pages/NovoPedido/NovoPedido"
 
 
 const AppRoutes = () =>{
@@ -34,6 +35,11 @@ const AppRoutes = () =>{
                             <Route
                              path="/categorias"
                              element={<ListarCategoria/>}
+                            />
+
+                            <Route
+                             path="/produtos/novo"
+                             element={<NovoProduto/>}
                             />
 
                      </Routes>
