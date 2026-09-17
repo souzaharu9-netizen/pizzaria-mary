@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react"
 
 import { Link } from "react-router-dom"
 
-import MenuFuncinario from '../MenuFuncionario/MenuFuncionario'
+import MenuFuncinario from "../MenuFuncionario/MenuFuncionario"
+import CredentialUser from "../../componentes/CredentialUser"
 import api from "../../services/api"
 
  
@@ -103,6 +104,7 @@ const ListarProduto = () => {
  
        <div className='container'>
             <MenuFuncinario/>
+            <CredentialUser title="Lista de Produtos"/>
            
            <div className="table-responsive">
         <table className="table table-bordered table-striped table-hover">

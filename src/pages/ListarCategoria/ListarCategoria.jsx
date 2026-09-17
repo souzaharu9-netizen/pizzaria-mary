@@ -1,5 +1,6 @@
 
 import MenuFuncionario from "../MenuFuncionario/MenuFuncionario"
+import CredentialUser from "../../componentes/CredentialUser"
 
 
 const ListarCategoria = () => {
@@ -8,6 +9,7 @@ const ListarCategoria = () => {
         <div className="container">
 
             <MenuFuncionario/>
+            <CredentialUser title="Lista de Categorias"/>
 
             <p>Lista de Categorias dos Produtos</p>
 
