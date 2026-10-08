@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react"
 
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 import MenuFuncinario from "../MenuFuncionario/MenuFuncionario"
 import CredentialUser from "../../componentes/CredentialUser"
@@ -28,6 +28,8 @@ const ListarProduto = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [idProdutoAExcluir, setIdProdutoAExcluir] = useState(null)
+
+  const navigate = useNavigate();
 
   useEffect (()=>{
     api
@@ -146,7 +148,7 @@ const ListarProduto = () => {
           <tbody>
          
           { produtos.map((produto) => (
-                   <tr key={produto.id}>
+            <tr key={produto.id}>
                 <td style={{ fontSize: "13px" }}>{produto.nome}</td>
                 <td style={{ fontSize: "13px" }}>
                     {
@@ -158,9 +160,13 @@ const ListarProduto = () => {
                 </td>
                 <td style={{ fontSize: "13px" }}>{produto.descricao}</td>
                 <td className="text-center fs-6" style={{ width: "100px" }}>
-                  {/* Botão de Editar */}
-                  <button
-                    className="btn btn-sm btn-primary me-2">
+                {/* Botão de Editar */}
+                <button
+                  className="btn btn-sm btn-primary me-2"
+                  onClick={() =>
+                    navigate(`/produtos/editar/${produto.id}`)
+                  }
+                  >
                     <i className="fas fa-pencil-alt"></i>{" "}
                     {/* Ícone de editar */}
                   </button>
